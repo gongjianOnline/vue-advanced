@@ -1,10 +1,12 @@
 <!--  -->
 <template>
-  <div>demo1</div>
+  <div>
+    <div>demo1 {{test}}</div>
+    <button @click="handelTest">handelClick</button>
+  </div>
 </template>
 
 <script>
-import myExtends from "../mixins/log.js"
 export default {
   name:"fuckEslintComponent",
   data () {
@@ -12,7 +14,7 @@ export default {
       name:"demo1"
     };
   },
-  extends:myExtends,
+  inject:["test","handelTest"],
 
   computed:{},
 
