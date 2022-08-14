@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import log from "../mixins/log.js"
+import myExtends from "../mixins/log.js"
 export default {
   name:"fuckEslintToComponent",
   data () {
@@ -12,7 +12,7 @@ export default {
       name:"demo2"
     };
   },
-  mixins:[log],
+  extends:myExtends,
 
   computed:{},
 
