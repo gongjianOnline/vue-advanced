@@ -1,16 +1,22 @@
 <!--  -->
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <DirectiveComponents></DirectiveComponents>
+  </div>
 </template>
 
 <script>
+import DirectiveComponents from "./components/directiveComponent"
 export default {
+  name:"appComponents",
   data () {
     return {
     };
   },
 
-  components:{},
+  components:{
+    DirectiveComponents
+  },
 
   computed:{},
 
